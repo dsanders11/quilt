@@ -2832,7 +2832,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@storybook/addon-a11y@^6.4.19":
+"@storybook/addon-a11y@^6.4.15":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.4.19.tgz#fb92840b5559b429afe2f28211440a5b5d1b6fcb"
   integrity sha512-dG6easap6W4AqyggVZPq8lBrhza8StA8J4eYz/GVdoXINSGtq/casV0rkmY3+SUXhPYux5oGavHo86j5I4Q/0Q==
@@ -2916,7 +2916,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/client-api@^6.4.19":
+"@storybook/client-api@^6.4.15":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/client-api/-/client-api-6.4.19.tgz#131597e160f112f51240a4e407191053e5ed972f"
   integrity sha512-OCrT5Um3FDvZnimQKwWtwsaI+5agPwq2i8YiqlofrI/NPMKp0I7DEkCGwE5IRD1Q8BIKqHcMo5tTmfYi0AxyOg==
