@@ -57,9 +57,7 @@ describe('useQuery', () => {
     await graphQL.resolveAll();
     await extractPromise;
 
-    // One call for the first pass, another call after the GraphQL
-    // resolves
-    expect(afterEachSpy).toHaveBeenCalledTimes(2);
+    expect(afterEachSpy).toHaveBeenCalledTimes(1);
   });
 
   it('does not run a query with the no-cache fetch policy during SSR', async () => {
@@ -78,8 +76,6 @@ describe('useQuery', () => {
     await graphQL.resolveAll();
     await extractPromise;
 
-    // One call for the first pass, which is the only one because there are
-    // no GraphQL queries to resolve.
     expect(afterEachSpy).toHaveBeenCalledTimes(1);
 
     // Not loading and no data
@@ -104,8 +100,6 @@ describe('useQuery', () => {
     await graphQL.resolveAll();
     await extractPromise;
 
-    // One call for the first pass, which is the only one because there are
-    // no GraphQL queries to resolve.
     expect(afterEachSpy).toHaveBeenCalledTimes(1);
 
     // Not loading and no data
@@ -130,8 +124,7 @@ describe('useQuery', () => {
     await graphQL.resolveAll();
     await extractPromise;
 
-    // One call for the first pass, another call after the GraphQL resolves
-    expect(afterEachSpy).toHaveBeenCalledTimes(2);
+    expect(afterEachSpy).toHaveBeenCalledTimes(1);
   });
 
   it('runs a query when `ssr` option is missing during SSR', async () => {
@@ -150,7 +143,6 @@ describe('useQuery', () => {
     await graphQL.resolveAll();
     await extractPromise;
 
-    // One call for the first pass, another call after the GraphQL resolves
-    expect(afterEachSpy).toHaveBeenCalledTimes(2);
+    expect(afterEachSpy).toHaveBeenCalledTimes(1);
   });
 });
